@@ -883,32 +883,7 @@ return false;
           </div>
 
           <!-- Profile Image Field (Optional) -->
-          <div class="mb-8">
-            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
-              Profile Image <span class="text-slate-400 text-sm">(Optional)</span>
-            </label>
-            <div class="relative">
-              <input 
-                type="file" 
-                id="pic" 
-                name="pic" 
-                accept="image/png,image/jpeg,image/jpg,image/gif"
-                class="hidden"
-                onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'Upload a file or drag and drop'"
-              />
-              <label 
-                for="pic" 
-                class="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed border-slate-300 dark:border-gray-600 rounded-xl cursor-pointer hover:border-primary hover:bg-blue-50/30 dark:hover:bg-blue-900/20 transition-colors"
-              >
-                <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                  <span class="material-symbols-outlined !text-4xl text-slate-400 dark:text-slate-300 mb-2">cloud_upload</span>
-                  <p class="mb-2 text-sm text-slate-500 dark:text-slate-400" id="file-name">Upload a file or drag and drop</p>
-                  <p class="text-xs text-slate-400 dark:text-slate-500">PNG, JPG, GIF up to 10MB</p>
-                </div>
-              </label>
-            </div>
-          </div>
-
+         
           <!-- Submit Button -->
           <button 
             type="submit"
